@@ -1,0 +1,133 @@
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.header{
+    color: #FCCA00;
+    background-color: #0F0F19;
+    text-align: center;
+    padding: 8px;
+    font-size: 25px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.container {
+    max-width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.plan {
+    flex: 1 1 30%; 
+    background-color: #f8f9fa;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 4px solid #FCCA00;
+    text-align: center;
+}
+.plan:hover {
+
+    border: 4px solid #0F0F19;
+
+}
+.cta-button {
+    text-align: center;
+    margin-top: 20px;
+}
+.cta-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FCCA00;
+    color: #0F0F19;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button a:hover {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0F0F19;
+    color: #FCCA00;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.bannerimg{
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    background-image: url(https://t3.ftcdn.net/jpg/04/94/01/92/360_F_494019215_jZTW9skIs18uoKjZinCbxOflLhJm14iy.jpg);
+}
+
+.imgBot{
+    background-image: url(https://t4.ftcdn.net/jpg/04/94/01/91/360_F_494019180_77Xoy8lXRBPTLq6If4tzWekry11oKhp3.jpg);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 12px 0px;
+}
+h2{
+    font-size: 30px;
+    background-color:#0F0F19 ;
+    color: #FCCA00;
+    border-radius: 30px;
+}
+.pricing_text{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    .plan {
+        flex: 1 1 80%; 
+    }
+
+    .header {
+        font-size: 20px; 
+    }
+
+    .bannerimg {
+        height: 200px;
+        margin-top: 10px; 
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .boxes {
+        justify-content: space-between;
+    }
+    .plan {
+        flex: 1 1 45%; 
+    }
+}
+@media only screen and (min-width: 1025px) {
+    .plan {
+        flex: 1 1 28%; 
+    }
+}
